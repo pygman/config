@@ -24,7 +24,7 @@ map n scrollRight # Scroll right <-l
 map v enterVisualMode # Enter visual mode <- v
 map V enterVisualLineMode # Enter visual line mode <- V
 # passNextKey # Pass the next key to Chrome <-
-map mi focusInput # Focus the first text input on the page <- gi
+map ki focusInput # Focus the first text input on the page <- gi
 map e LinkHints.activateMode # Open a link in the current tab <- f
 # map E LinkHints.activateModeToOpenInNewTab # Open a link in a new tab <- F
 # LinkHints.activateModeToOpenInNewForegroundTab # Open a link in a new tab & switch to it <-
@@ -34,8 +34,8 @@ map E LinkHints.activateModeWithQueue # Open multiple links in a new tab <- <a-f
 map ye LinkHints.activateModeToCopyLinkUrl # Copy a link URL to the clipboard <- yf
 map [[ goPrevious # Follow the link labeled previous or < <- [[
 map ]] goNext # Follow the link labeled next or > <- ]]
-map mf nextFrame # Select the next frame on the page <- gf
-map mF mainFrame # Select the page's main/top frame <- gF
+map kf nextFrame # Select the next frame on the page <- gf
+map kF mainFrame # Select the page's main/top frame <- gF
 map ~ Marks.activateCreateMode # Create a new mark <- m
 map ` Marks.activateGotoMode # Go to a mark `
 
@@ -47,8 +47,8 @@ map oo Vomnibar.activateInNewTab # Open URL, bookmark or history entry in a new 
 map OB Vomnibar.activateBookmarks # Open a bookmark <- b
 map ob Vomnibar.activateBookmarksInNewTab # Open a bookmark in a new tab <- B
 map ot Vomnibar.activateTabSelection # Search through your open tabs <- T
-map mo Vomnibar.activateEditUrl # Edit the current URL <- ge
-map mO Vomnibar.activateEditUrlInNewTab # Edit the current URL and open in a new tab <- gE
+map ko Vomnibar.activateEditUrl # Edit the current URL <- ge
+map kO Vomnibar.activateEditUrlInNewTab # Edit the current URL and open in a new tab <- gE
 
 ############################################################
                        Using find
@@ -60,8 +60,8 @@ map g performBackwardsFind # Cycle backward to the previous find match <- N
 ############################################################
                   Navigating history
 ###########################################################
-map <a-o> goBack # Go back in history <- H
-map <a-e> goForward # Go forward in history <- L
+map q goBack # Go back in history <- H
+map j goForward # Go forward in history <- L
 
 ############################################################
                   Manipulating tabs
@@ -70,12 +70,12 @@ map b createTab # Create new tab <- t
 map , previousTab # Go one tab left <- J,gT
 map . nextTab # Go one tab right <- K,gt
 map ^ visitPreviousTab # Go to previously-visited tab <- ^
-map m, firstTab # Go to the first tab <- g0
-map m. lastTab # Go to the last tab <- g$
-map yt duplicateTab # Duplicate current tab <- yt
-map mp togglePinTab # Pin/unpin current tab <- <a-p>
-map q removeTab # Close current tab <- x
-map ; restoreTab # Restore closed tab <- X
+map k, firstTab # Go to the first tab <- g0
+map k. lastTab # Go to the last tab <- g$
+map kj duplicateTab # Duplicate current tab <- yt
+map kp togglePinTab # Pin/unpin current tab <- <a-p>
+map ; removeTab # Close current tab <- x
+map : restoreTab # Restore closed tab <- X
 map W moveTabToNewWindow # Move tab to new window <- W
 # closeTabsOnLeft # Close tabs on the left <-
 # closeTabsOnRight # Close tabs on the right <-
@@ -87,4 +87,4 @@ map <a-.> moveTabRight # Move tab to the right <- >>
                   Miscellaneous
 ###########################################################
 map ? showHelp # Show help <- ?
-map ms toggleViewSource # View page source <- gs
+map ks toggleViewSource # View page source <- gs
