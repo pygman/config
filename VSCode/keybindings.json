@@ -1,0 +1,400 @@
+// 将键绑定放入此文件中以覆盖默认值
+[
+    // 左
+    {
+        "key": "ctrl+alt+h",
+        "command": "cursorLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+h",
+        "command": "list.collapse",
+        "when": "listFocus && !inputFocus"
+    },
+    // shift+左
+    {
+        "key": "ctrl+shift+alt+h",
+        "command": "cursorLeftSelect",
+        "when": "editorTextFocus"
+    },
+    // 右
+    {
+        "key": "ctrl+alt+n",
+        "command": "cursorRight",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "repl.action.acceptSuggestion",
+        "when": "editorTextFocus && inDebugRepl && suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "list.expand",
+        "when": "listFocus && !inputFocus"
+    },
+    // shift+右
+    {
+        "key": "ctrl+shift+alt+n",
+        "command": "cursorRightSelect",
+        "when": "editorTextFocus"
+    },
+    // 上
+    {
+        "key": "ctrl+c",
+        "command": "cursorUp",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "repl.action.historyPrevious",
+        "when": "editorTextFocus && inDebugRepl && onFirsteDebugReplLine"
+    },
+    {
+        "key": "ctrl+cup",
+        "command": "showPrevParameterHint",
+        "when": "editorTextFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "selectPrevSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "list.focusUp",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "search.action.focusSearchFromResults",
+        "when": "firstMatchFocus && searchViewletVisible"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "search.focus.previousInputBox",
+        "when": "inputBoxFocus && searchViewletVisible && !searchInputBoxFocus"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "workbench.action.interactivePlayground.arrowUp",
+        "when": "interactivePlaygroundFocus && !editorTextFocus"
+    },
+    // shift+上
+    {
+        "key": "ctrl+shift+c",
+        "command": "cursorUpSelect",
+        "when": "editorTextFocus"
+    },
+    // 下
+    {
+        "key": "ctrl+t",
+        "command": "cursorDown",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "repl.action.historyNext",
+        "when": "editorTextFocus && inDebugRepl && onLastDebugReplLine"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "settings.action.focusSettingsFile",
+        "when": "inSettingsSearch"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "showNextParameterHint",
+        "when": "editorTextFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "selectNextSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "keybindings.editor.focusKeybindings",
+        "when": "inKeybindings && inKeybindingsSearch"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "list.focusDown",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "search.focus.nextInputBox",
+        "when": "inputBoxFocus && searchViewletVisible"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "workbench.action.interactivePlayground.arrowDown",
+        "when": "interactivePlaygroundFocus && !editorTextFocus"
+    },
+    // shift+下
+    {
+        "key": "ctrl+shift+t",
+        "command": "cursorDownSelect",
+        "when": "editorTextFocus"
+    },
+    // home
+    {
+        "key": "ctrl+g",
+        "command": "cursorHome",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "list.focusFirst",
+        "when": "listFocus && !inputFocus"
+    },
+    // shift+home
+    {
+        "key": "ctrl+shift+g",
+        "command": "cursorHomeSelect",
+        "when": "editorTextFocus"
+    },
+    // end
+    {
+        "key": "ctrl+r",
+        "command": "cursorEnd",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "list.focusLast",
+        "when": "listFocus && !inputFocus"
+    },
+    // shift+end
+    {
+        "key": "ctrl+shift+r",
+        "command": "cursorEndSelect",
+        "when": "editorTextFocus"
+    },
+    // TODO subword
+    {
+        "key": "ctrl+h",
+        "command": "subwordNavigation.cursorSubwordLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "subwordNavigation.cursorSubwordRight",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+h",
+        "command": "subwordNavigation.cursorSubwordLeftSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "subwordNavigation.cursorSubwordRightSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+backspace",
+        "command": "subwordNavigation.deleteSubwordLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+delete",
+        "command": "subwordNavigation.deleteSubwordRight",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "subwordNavigation.deleteSubwordRight",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+right",
+        "command": "cursorWordEndRight",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+right",
+        "command": "cursorWordEndRightSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+left",
+        "command": "cursorWordStartLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+left",
+        "command": "cursorWordStartLeftSelect",
+        "when": "editorTextFocus"
+    },
+    // new line
+    {
+        "key": "shift+enter",
+        "command": "editor.action.insertLineAfter",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    // 自选模式
+    {
+        "key": "ctrl+m tab",
+        "command": "editor.action.toggleTabFocusMode"
+    },
+    // copy cut paste
+    {
+        "key": "ctrl+shift+v",
+        "command": "editor.action.clipboardCopyAction",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "problems.action.copy",
+        "when": "problemFocus"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "keybindings.editor.copyKeybindingEntry",
+        "when": "inKeybindings && keybindingFocus"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "workbench.action.terminal.copySelection",
+        "when": "terminalFocus && terminalTextSelected"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "filesExplorer.copy",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+x",
+        "command": "editor.action.clipboardCutAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    // redo
+    {
+        "key": "ctrl+shift+z",
+        "command": "redo",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    // line
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.gotoLine"
+    },
+    // 多行
+    {
+        "key": "ctrl+shift+alt+t",
+        "command": "cursorColumnSelectDown",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+c",
+        "command": "cursorColumnSelectUp",
+        "when": "editorTextFocus"
+    },
+    /////////////////////////////////////////
+    ////////                         ////////
+    ////////      METHOD START       ////////
+    ////////                         ////////
+    /////////////////////////////////////////
+    // 括号
+    {
+        "key": "ctrl+m ctrl+b",
+        "command": "editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+    },
+    /////////////////////////////////////////
+    ////////                         ////////
+    ////////      METHOD  END        ////////
+    ////////                         ////////
+    /////////////////////////////////////////
+    /////////////////////////////////////////
+    ////////                         ////////
+    ////////      SYSTEM START       ////////
+    ////////                         ////////
+    /////////////////////////////////////////
+    // 保存
+    {
+        "key": "ctrl+x ctrl+s",
+        "command": "workbench.action.files.save"
+    },
+    // 保存全部
+    {
+        "key": "ctrl+shift+x ctrl+shift+s",
+        "command": "workbench.action.files.saveAll"
+    },
+    // 另存为
+    {
+        "key": "ctrl+x ctrl+w",
+        "command": "workbench.action.files.saveAs"
+    },
+    /////////////////////////////////////////
+    ////////                         ////////
+    ////////      SYSTEM  END        ////////
+    ////////                         ////////
+    /////////////////////////////////////////
+    // previous tab
+    {
+        "key": "ctrl+,",
+        "command": "selectPrevPageSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+,",
+        "command": "workbench.action.previousEditor"
+    },
+    // next tab
+    {
+        "key": "ctrl+.",
+        "command": "selectNextPageSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+.",
+        "command": "workbench.action.nextEditor"
+    },
+    // close tab
+    {
+        "key": "ctrl+x k",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+x k",
+        "command": "workbench.action.closeWindow",
+        "when": "!editorIsOpen"
+    },
+    // cursor history
+    {
+        "key": "ctrl+q",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.navigateForward"
+    },
+    // toggle
+    {
+        "key": "shift+escape",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    // alt+5
+    {
+        "key": "alt+5",
+        "command": "workbench.view.debug"
+    },
+    // alt+1
+    {
+        "key": "alt+1",
+        "command": "workbench.view.explorer"
+    },
+    // alt+8
+    {
+        "key": "alt+8",
+        "command": "workbench.view.extensions"
+    },
+    // alt+9
+    {
+        "key": "alt+9",
+        "command": "workbench.view.scm"
+    },
+]

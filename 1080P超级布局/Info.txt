@@ -1,0 +1,3 @@
+﻿Name=1080P超级布局
+Style=default
+SupportPlatform=SWIA
