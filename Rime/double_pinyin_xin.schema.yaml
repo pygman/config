@@ -61,7 +61,7 @@ speller:
     - xform/iu$/W/
     - xform/[iu]a$/F/
     - xform/uan$/G/
-    - xform/ue$/Z/
+    - xform/[uv]e$/Z/
     - xform/ing$|uai$/D/
     - xform/uo$/O/
     - xform/un$/J/
